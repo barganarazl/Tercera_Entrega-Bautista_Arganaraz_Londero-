@@ -1,0 +1,33 @@
+{
+    "Nombres_Empresas" : {
+        "GOOGL":"Alphabet Inc.", 
+        "AMZN":"Amazon.com, Inc.", 
+        "AAPL":"Apple Inc.", 
+        "META":"Meta Platforms, Inc.", 
+        "MSFT":"Microsoft Corporation", 
+        "NVDA":"NVIDIA Corporation", 
+        "TSLA":"Tesla, Inc."
+    },
+    "Columnas_DataFrame" : [
+        "Dia", 
+        "Apertura", 
+        "Maximo", 
+        "Minimo", 
+        "Cierre", 
+        "Volumen", 
+        "Codigo", 
+        "Empresa"
+    ],
+    "Columnas_Redshift" : {
+        "Clave_Compuesta" : "VARCHAR(50) PRIMARY KEY",
+        "Dia" : "DATE",
+        "Empresa" : "VARCHAR(50)",
+        "Codigo" : "VARCHAR(50)",
+        "Apertura" : "DECIMAL(10,2)",
+        "Maximo" : "DECIMAL(10,2)",
+        "Minimo" : "DECIMAL(10,2)",
+        "Cierre" : "DECIMAL(10,2)",
+        "Volumen" : "INT",
+        "Columna_Temporal" : "TIMESTAMP" 
+    }
+}
