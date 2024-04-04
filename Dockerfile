@@ -11,7 +11,7 @@ WORKDIR /app
 COPY requirements.txt .
 COPY ./dags/cotizaciones_api.py .
 COPY ./dags/variables.json .
-COPY ./dags/dag_principal .
+COPY ./dags/dag_principal.py .
 
 # Se ejecuta la instalación del contenido del archivo 'requirements.txt' (que contiene la librería 'apache-airflow'):
 RUN pip install --upgrade pip
